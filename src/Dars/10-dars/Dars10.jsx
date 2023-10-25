@@ -14,7 +14,7 @@ const Dars10 = () => {
         <Navbar />
 
         <div className="routes">
-            <Routes>
+            <Routes> 
                 <Route index element={<Men />}/>
                 <Route path="women" element={<Women />}/>
                 <Route path="kids" element={<Kids />}/>
