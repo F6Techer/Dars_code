@@ -6,9 +6,11 @@ const Navbar = () => {
     const [filter, setFilter] = useState(false)
     const handleFilterOpen = () =>{
         setFilter(true)
+        console.log("filter open")
     }
     const handleFilterClose = () =>{
         setFilter(false)
+        console.log("filter close")
     }
     return ( 
         <React.Fragment>
