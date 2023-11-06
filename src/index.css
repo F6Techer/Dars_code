@@ -6,3 +6,14 @@
 .active{
   color: red;
 }
+.red{
+  background: red;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+.card{
+  background: #123456;
+}

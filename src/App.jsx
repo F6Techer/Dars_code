@@ -1,10 +1,11 @@
 import React from 'react';
-import Dars10 from './Dars/10-dars/Dars10';
+import Dars14 from './Dars/14-dars/Dars14';
+// f6_frontend
 
 const App = () => {
   return ( 
     <React.Fragment>
-      <Dars10 />
+      <Dars14 />
     </React.Fragment>
    );
 }
