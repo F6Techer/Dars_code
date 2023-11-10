@@ -10,10 +10,17 @@ const Dars14 = () => {
     //     .then(result => console.log(result))
 
     const [data, setData] = useState([])
+    const [load, setLoad] = useState(true)
     const getData = () =>{
+        setLoad(true)
         axios.get(url).then((result)=>{
             console.log(result)
             setData(result.data)
+            if (result.status === 200) {
+                setTimeout(() => {
+                    setLoad(false)
+                }, 2000);
+            }
         })
     }
     useEffect(()=>{
@@ -21,6 +28,7 @@ const Dars14 = () => {
     },[])
     return (
         <React.Fragment>
+            {load ? <div className="loading"></div> : ""}
             <div className='grid'>
                 {data?.map((item, index, array)=>{
                     return(

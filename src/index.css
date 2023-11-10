@@ -46,3 +46,32 @@
   padding: 0 10px;
   border-radius: 5px;
 }
+.loading{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #123456;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading::before{
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 3px solid white;
+  border-radius: 50%;
+  border-width: 5px 0 0 0;
+  animation: load 1.2s linear infinite;
+}
+@keyframes load {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}

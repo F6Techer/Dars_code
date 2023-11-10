@@ -17,7 +17,7 @@ const Edit = () => {
             description: desc
         }
         axios.put(url+"/"+params.id, data).then((res)=>{
-            console.log(res)
+            // console.log(res)
             if (res.status === 200) {
                 setTimeout(() => {
                     navigate("/")

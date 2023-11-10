@@ -4,6 +4,7 @@ import SinglePage from './Dars/14-dars/SinglePage';
 import { Routes, Route, Link } from 'react-router-dom';
 import Post from './Dars/14-dars/Post';
 import Edit from './Dars/14-dars/Edit';
+import Cards from './Vazifa/VazifaCards/Cards';
 // f6_frontend
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
         <Route path='/edit/:id' element={<Edit/>}/>
         <Route path='/post' element={<Post/>}/>
       </Routes>
+      {/* <Cards/> */}
       
     </React.Fragment>
    );
