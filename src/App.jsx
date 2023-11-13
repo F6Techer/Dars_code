@@ -4,13 +4,13 @@ import SinglePage from './Dars/14-dars/SinglePage';
 import { Routes, Route, Link } from 'react-router-dom';
 import Post from './Dars/14-dars/Post';
 import Edit from './Dars/14-dars/Edit';
-import Cards from './Vazifa/VazifaCards/Cards';
+import Todo from './Vazifa/todo/Todo';
 // f6_frontend
 
 const App = () => {
   return ( 
     <React.Fragment>
-      <div className="navbar">
+      {/* <div className="navbar">
         <Link to={"/"}>Home</Link>
         <Link to={"/post"}>Post</Link>
       </div>
@@ -19,8 +19,8 @@ const App = () => {
         <Route path='/news/:id' element={<SinglePage/>}/>
         <Route path='/edit/:id' element={<Edit/>}/>
         <Route path='/post' element={<Post/>}/>
-      </Routes>
-      {/* <Cards/> */}
+      </Routes> */}
+      <Todo/>
       
     </React.Fragment>
    );
