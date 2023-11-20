@@ -1,0 +1,13 @@
+.mySwiper{
+    max-width: 900px;
+    height: 400px;
+    background: #7fac1f;
+    padding: 10px 10px 40px 10px;
+    .swiper-slide{
+        background: green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+    }
+}
