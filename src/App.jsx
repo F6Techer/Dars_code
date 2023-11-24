@@ -1,10 +1,10 @@
 import React from 'react';
-import Dars16 from './Dars/16-dars/Dars16';
+import Dars17 from './Dars/17-dars/Dars17';
 
 const App = () => {
   return ( 
     <React.Fragment>
-      <Dars16/>
+      <Dars17 />
     </React.Fragment>
    );
 }
