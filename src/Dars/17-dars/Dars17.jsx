@@ -22,7 +22,7 @@ const Dars17 = () => {
         <div>
             <div className='navbar'>
                 <NavLink to={"/"}>Search</NavLink>
-                <NavLink to={"/category"}>Hammasi</NavLink>
+                <NavLink to={"/category/all"}>Hammasi</NavLink>
                 <NavLink to={"/category/May"}>May</NavLink>
                 <NavLink to={"/category/January"}>January</NavLink>
                 <NavLink to={"/category/September"}>September</NavLink>

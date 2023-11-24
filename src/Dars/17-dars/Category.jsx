@@ -21,7 +21,7 @@ const Category = () => {
         <div>
             <div className='grid'>
                 {data.map((item)=>{
-                    if (item.category.includes(params.category)) {
+                    if (params.category === "all") {
                         return(
                             <div className='card' key={item.id}>
                                 <h1>{item.title}</h1>
